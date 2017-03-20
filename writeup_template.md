@@ -142,9 +142,11 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
+
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
 ![alt text][image7] ![alt text][image8]
 
+Second image "Roundabout mandatory" is one of the rare examples so it might be difficult for the network to recognize it. Third image "Speed limit 30km/h" is very similar to 80km/h speed limit so it would be a good test to see the network performance. The images are well lit and in focus.
 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
@@ -156,13 +158,13 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | No entry      		| No entry  									|
-| Roundabout mandatory     			|Roundabout mandatory 										|
+| Roundabout mandatory     			|Priority road									|
 | Speed limit (30 km/h)				| Speed limit (30 km/h)									|
 | Priority road      		| Priority road				 				|
 | Yield		| Yield     							|
 
 
-The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. The model guessed the second image and is very certain about it.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -173,7 +175,7 @@ The code for making predictions on my final model is located in the 90th cell of
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | .99         			| No entry  									|
-| .98    				| Roundabout										|
+| .98    				| Priority road									|
 | .81				| Speed limit (30 km/h)											|
 | 1.0	      			| Priority road					 				|
 | 1.0				    | Yield     							|
